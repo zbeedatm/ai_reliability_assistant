@@ -1,0 +1,185 @@
+AI Reliability Assistant — Example Questions & Outputs (Set 2)
+===============================================================
+Three additional examples demonstrating different question types and intents.
+
+Full JSON outputs (including retrieved_records) are saved under /output.
+
+***IMPORTANT***
+Full JSON outputs will be attached with the task submission, this file is only for demonstrating.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 1 — SUPPORTED QUESTION (fault_filter intent)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "Are there any machines with bearing or vibration issues that need urgent attention?"
+
+Response example:
+{
+  "answer": "Yes, there are five machines with bearing or vibration issues that
+             require urgent attention: M-006, M-021, M-040, M-045, and M-053.",
+
+  "reasoning": "1. M-006: Urgent overdue WO-0001 — Inspect compressor overheating
+                   and bearing condition. Active high bearing_wear alert (9.2 vs
+                   threshold 5.5). Priority score 49.
+                2. M-021: Urgent overdue WO-0004 — Replace pump seal and inspect
+                   bearing housing. Active critical seal_leak and high vibration
+                   alerts. Priority score 55 (highest overall).
+                3. M-040: Urgent WO-0036 — Schedule alignment. Active high
+                   imbalance alert (9.23 vs threshold 4.79).
+                4. M-045: Urgent WO-0040 — Replace worn bearing. Active bearing
+                   wear and vibration alerts.
+                5. M-053: Urgent WO-0051 — Balance rotating assembly. Previous
+                   high vibration alert.",
+
+  "data_used": ["work_orders", "maintenance_history"],
+  "machines_referenced": ["M-006", "M-021", "M-040", "M-045", "M-053"],
+  "limitations_or_assumptions": [
+    "Urgent attention is defined as work orders explicitly marked with 'urgent' priority.",
+    "Alignment and balancing tasks are treated as vibration-related issues."
+  ],
+  "confidence": "high",
+  "capabilities_used": ["data_retriever", "maintenance_analyzer", "reliability_analyzer"],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "Are there any machines with bearing or vibration issues that need urgent attention?",
+      "output": "intent=prioritize, entities={'machines': [], 'sites': [], 'fault_types': ['bearing', 'vibration']}. The user is asking for prioritization filtered by specific fault types.",
+      "data_sources": []
+    },
+    {
+      "step": "data_retriever",
+      "input": "all machines",
+      "output": "Retrieved 60 machine profiles",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "maintenance_analyzer",
+      "input": "work orders and history for 60 machines",
+      "output": "Open WOs: 48, Urgent: 6, Overdue: 48",
+      "data_sources": ["work_orders", "maintenance_history"]
+    },
+    {
+      "step": "reliability_analyzer",
+      "input": "all machine profiles with alerts and work orders",
+      "output": "Top priority machines: [('M-021', 55), ('M-006', 49), ('M-011', 33), ('M-005', 31), ('M-034', 31)]",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "question + 2 context blocks",
+      "output": "Yes, there are five machines with bearing or vibration issues that require urgent attention...",
+      "data_sources": ["work_orders", "maintenance_history"]
+    }
+  ]
+}
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 2 — OUT-OF-SCOPE QUESTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "Which maintenance technician is best qualified to repair M-021?"
+
+Response example:
+{
+  "answer": "This question is outside the scope of the reliability assistant.
+             I can only answer questions about machine health, alerts, work orders,
+             and maintenance history based on the provided industrial dataset.",
+
+  "reasoning": "The question asks about technician qualifications, which is outside
+                the scope of a machine reliability assistant.",
+
+  "data_used": [],
+  "machines_referenced": [],
+  "limitations_or_assumptions": ["No reliability data supports this question."],
+  "confidence": "low",
+  "capabilities_used": [],
+  "retrieved_records": [],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "Which maintenance technician is best qualified to repair M-021?",
+      "output": "intent=out_of_scope, entities={'machines': ['M-021'], 'sites': [], 'fault_types': []}. The question asks about technician qualifications, which is outside the scope of a machine reliability assistant.",
+      "data_sources": []
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "Which maintenance technician is best qualified to repair M-021?",
+      "output": "Out of scope — no capabilities invoked.",
+      "data_sources": []
+    }
+  ]
+}
+
+Note: Even though M-021 exists in the dataset, the question topic (technician
+qualifications) is out of scope. The planner correctly identified the intent
+and short-circuited — no machine data was retrieved.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 3 — DATA DOES NOT SUPPORT A CONFIDENT ANSWER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "What is the production output loss caused by M-006 being down?"
+
+Response example:
+{
+  "answer": "Machine M-006 is a critical primary compressor for a packaging line
+             with no redundancy available. If M-006 were to go down, it would
+             likely halt the packaging line. However, the data does not contain
+             specific metrics for production output, loss rates, or associated
+             costs — the exact production output loss cannot be quantified.",
+
+  "reasoning": "M-006 has 'critical' criticality, 'critical' health status, and
+    is described as the 'Primary compressor for packaging line. No redundancy
+    available.' This confirms a downtime event would directly impact production.
+    However, the dataset contains only machine health, alerts, work orders, and
+    maintenance history — no production throughput figures, OEE data, or financial
+    cost-per-hour values are present. Quantifying the output loss is not possible
+    from this data alone.",
+
+  "data_used": ["machines"],
+  "machines_referenced": ["M-006"],
+  "limitations_or_assumptions": [
+    "The available data does not include production output metrics, historical
+     production loss data, or financial implications of machine downtime."
+  ],
+  "confidence": "low",
+  "capabilities_used": [],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "What is the production output loss caused by M-006 being down?",
+      "output": "intent=machine_specific, entities={'machines': ['M-006'], 'sites': [], 'fault_types': []}. The user is asking about a specific machine's impact on production.",
+      "data_sources": []
+    },
+    {
+      "step": "data_retriever",
+      "input": "machine lookup: ['M-006']",
+      "output": "Found profiles for: ['M-006']",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "maintenance_analyzer",
+      "input": "work orders and history for 1 machines",
+      "output": "Open WOs: 2, Urgent: 1, Overdue: 2",
+      "data_sources": ["work_orders", "maintenance_history"]
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "question + 2 context blocks",
+      "output": "The provided data indicates that Machine M-006 is a critical primary compressor... the exact production output loss cannot be quantified.",
+      "data_sources": ["machines"]
+    }
+  ]
+}
+
+Note: Unlike the out-of-scope example, the planner classified this as
+machine_specific and retrieved M-006's full profile before the synthesizer
+determined the data was insufficient. The assistant confirms what it does know
+(M-006 is critical with no redundancy) while being explicit about what it
+cannot determine (production figures, financial impact).

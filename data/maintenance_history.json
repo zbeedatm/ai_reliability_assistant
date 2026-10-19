@@ -1,0 +1,1242 @@
+[
+  {
+    "maintenanceId": "MH-0001",
+    "machineId": "M-006",
+    "performedAt": "2026-04-21",
+    "action": "Thermal inspection",
+    "outcome": "partial_fix",
+    "findings": "Cleaned intake filter; discharge temperature improved temporarily but rose again.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0002",
+    "machineId": "M-006",
+    "performedAt": "2025-11-20",
+    "action": "Bearing replacement",
+    "outcome": "fixed",
+    "findings": "Drive-end bearing replaced after high vibration.",
+    "downtimeHours": 6,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0003",
+    "machineId": "M-011",
+    "performedAt": "2026-04-28",
+    "action": "Motor current inspection",
+    "outcome": "no_issue_found",
+    "findings": "Current draw normal; casing still warmer than comparable motors.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0004",
+    "machineId": "M-016",
+    "performedAt": "2026-04-14",
+    "action": "Cooling system cleaning",
+    "outcome": "partial_fix",
+    "findings": "Flow improved after cleaning, but approach temperature remains above baseline.",
+    "downtimeHours": 4,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0005",
+    "machineId": "M-021",
+    "performedAt": "2026-03-20",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Mechanical seal replaced. Similar leak symptoms now recurring.",
+    "downtimeHours": 5,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0006",
+    "machineId": "M-021",
+    "performedAt": "2026-05-07",
+    "action": "Vibration analysis",
+    "outcome": "needs_follow_up",
+    "findings": "Vibration source likely near bearing housing; follow-up inspection recommended.",
+    "downtimeHours": 2,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0007",
+    "machineId": "M-026",
+    "performedAt": "2026-05-01",
+    "action": "Routine inspection",
+    "outcome": "monitor",
+    "findings": "Bearing temperature slightly above normal; no immediate defect found.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0008",
+    "machineId": "M-041",
+    "performedAt": "2026-04-16",
+    "action": "Alignment correction",
+    "outcome": "partial_fix",
+    "findings": "Alignment improved unloaded vibration, but loaded vibration remains high.",
+    "downtimeHours": 3,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0009",
+    "machineId": "M-001",
+    "performedAt": "2024-07-25",
+    "action": "Belt replacement",
+    "outcome": "monitor",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 1,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0010",
+    "machineId": "M-001",
+    "performedAt": "2024-08-31",
+    "action": "Belt replacement",
+    "outcome": "fixed",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 2,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0011",
+    "machineId": "M-003",
+    "performedAt": "2025-08-14",
+    "action": "Bearing replacement",
+    "outcome": "fixed",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 6,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0012",
+    "machineId": "M-003",
+    "performedAt": "2024-12-19",
+    "action": "Belt replacement",
+    "outcome": "partial_fix",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 6,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0013",
+    "machineId": "M-003",
+    "performedAt": "2025-01-03",
+    "action": "Alignment correction",
+    "outcome": "monitor",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 1,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0014",
+    "machineId": "M-004",
+    "performedAt": "2025-12-02",
+    "action": "Vibration analysis",
+    "outcome": "fixed",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0015",
+    "machineId": "M-004",
+    "performedAt": "2024-08-29",
+    "action": "Vibration analysis",
+    "outcome": "monitor",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0016",
+    "machineId": "M-005",
+    "performedAt": "2025-03-30",
+    "action": "Seal replacement",
+    "outcome": "needs_follow_up",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0017",
+    "machineId": "M-005",
+    "performedAt": "2025-09-07",
+    "action": "Motor current inspection",
+    "outcome": "monitor",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 3,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0018",
+    "machineId": "M-005",
+    "performedAt": "2026-02-02",
+    "action": "Alignment correction",
+    "outcome": "partial_fix",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0019",
+    "machineId": "M-006",
+    "performedAt": "2025-06-11",
+    "action": "Belt replacement",
+    "outcome": "partial_fix",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 4,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0020",
+    "machineId": "M-006",
+    "performedAt": "2024-12-18",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 4,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0021",
+    "machineId": "M-006",
+    "performedAt": "2026-04-19",
+    "action": "Vibration analysis",
+    "outcome": "no_issue_found",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0022",
+    "machineId": "M-007",
+    "performedAt": "2026-03-24",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0023",
+    "machineId": "M-007",
+    "performedAt": "2025-07-24",
+    "action": "Vibration analysis",
+    "outcome": "monitor",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 4,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0024",
+    "machineId": "M-008",
+    "performedAt": "2025-05-03",
+    "action": "Cooling system cleaning",
+    "outcome": "fixed",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 8,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0025",
+    "machineId": "M-008",
+    "performedAt": "2024-10-06",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 4,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0026",
+    "machineId": "M-008",
+    "performedAt": "2025-04-12",
+    "action": "Seal replacement",
+    "outcome": "monitor",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 4,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0027",
+    "machineId": "M-009",
+    "performedAt": "2024-06-15",
+    "action": "Alignment correction",
+    "outcome": "needs_follow_up",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 4,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0028",
+    "machineId": "M-009",
+    "performedAt": "2025-04-25",
+    "action": "Lubrication service",
+    "outcome": "no_issue_found",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 8,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0029",
+    "machineId": "M-010",
+    "performedAt": "2024-09-03",
+    "action": "Seal replacement",
+    "outcome": "needs_follow_up",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 4,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0030",
+    "machineId": "M-010",
+    "performedAt": "2025-12-23",
+    "action": "Motor current inspection",
+    "outcome": "fixed",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 6,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0031",
+    "machineId": "M-011",
+    "performedAt": "2024-12-01",
+    "action": "Motor current inspection",
+    "outcome": "partial_fix",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0032",
+    "machineId": "M-011",
+    "performedAt": "2024-08-19",
+    "action": "Belt replacement",
+    "outcome": "partial_fix",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 6,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0033",
+    "machineId": "M-011",
+    "performedAt": "2024-11-13",
+    "action": "Belt replacement",
+    "outcome": "partial_fix",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 3,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0034",
+    "machineId": "M-012",
+    "performedAt": "2025-06-07",
+    "action": "Vibration analysis",
+    "outcome": "needs_follow_up",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 6,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0035",
+    "machineId": "M-012",
+    "performedAt": "2024-09-08",
+    "action": "Cooling system cleaning",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0036",
+    "machineId": "M-013",
+    "performedAt": "2024-09-22",
+    "action": "Belt replacement",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0037",
+    "machineId": "M-013",
+    "performedAt": "2025-04-18",
+    "action": "Motor current inspection",
+    "outcome": "monitor",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 1,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0038",
+    "machineId": "M-013",
+    "performedAt": "2025-10-29",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0039",
+    "machineId": "M-014",
+    "performedAt": "2025-03-18",
+    "action": "Lubrication service",
+    "outcome": "partial_fix",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 4,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0040",
+    "machineId": "M-015",
+    "performedAt": "2024-11-27",
+    "action": "Preventive maintenance",
+    "outcome": "needs_follow_up",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 1,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0041",
+    "machineId": "M-015",
+    "performedAt": "2024-11-20",
+    "action": "Seal replacement",
+    "outcome": "no_issue_found",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0042",
+    "machineId": "M-015",
+    "performedAt": "2025-05-27",
+    "action": "Lubrication service",
+    "outcome": "partial_fix",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 4,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0043",
+    "machineId": "M-016",
+    "performedAt": "2024-08-26",
+    "action": "Preventive maintenance",
+    "outcome": "monitor",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 3,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0044",
+    "machineId": "M-016",
+    "performedAt": "2025-09-24",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 2,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0045",
+    "machineId": "M-017",
+    "performedAt": "2025-01-06",
+    "action": "Preventive maintenance",
+    "outcome": "needs_follow_up",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 2,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0046",
+    "machineId": "M-017",
+    "performedAt": "2024-10-02",
+    "action": "Preventive maintenance",
+    "outcome": "fixed",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 6,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0047",
+    "machineId": "M-018",
+    "performedAt": "2025-07-19",
+    "action": "Cooling system cleaning",
+    "outcome": "needs_follow_up",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0048",
+    "machineId": "M-019",
+    "performedAt": "2024-07-10",
+    "action": "Bearing replacement",
+    "outcome": "partial_fix",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 2,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0049",
+    "machineId": "M-019",
+    "performedAt": "2025-08-08",
+    "action": "Vibration analysis",
+    "outcome": "fixed",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 4,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0050",
+    "machineId": "M-019",
+    "performedAt": "2024-09-19",
+    "action": "Alignment correction",
+    "outcome": "fixed",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 1,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0051",
+    "machineId": "M-021",
+    "performedAt": "2026-01-30",
+    "action": "Thermal inspection",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0052",
+    "machineId": "M-021",
+    "performedAt": "2026-05-07",
+    "action": "Preventive maintenance",
+    "outcome": "monitor",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 4,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0053",
+    "machineId": "M-021",
+    "performedAt": "2025-01-09",
+    "action": "Cooling system cleaning",
+    "outcome": "monitor",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 6,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0054",
+    "machineId": "M-022",
+    "performedAt": "2026-02-10",
+    "action": "Alignment correction",
+    "outcome": "partial_fix",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 6,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0055",
+    "machineId": "M-022",
+    "performedAt": "2025-11-14",
+    "action": "Thermal inspection",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0056",
+    "machineId": "M-023",
+    "performedAt": "2024-12-21",
+    "action": "Routine inspection",
+    "outcome": "no_issue_found",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 1,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0057",
+    "machineId": "M-023",
+    "performedAt": "2025-07-11",
+    "action": "Alignment correction",
+    "outcome": "no_issue_found",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 4,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0058",
+    "machineId": "M-023",
+    "performedAt": "2025-07-25",
+    "action": "Bearing replacement",
+    "outcome": "no_issue_found",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 3,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0059",
+    "machineId": "M-024",
+    "performedAt": "2024-12-12",
+    "action": "Vibration analysis",
+    "outcome": "no_issue_found",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0060",
+    "machineId": "M-024",
+    "performedAt": "2025-11-27",
+    "action": "Thermal inspection",
+    "outcome": "needs_follow_up",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 6,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0061",
+    "machineId": "M-025",
+    "performedAt": "2025-07-14",
+    "action": "Preventive maintenance",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 4,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0062",
+    "machineId": "M-025",
+    "performedAt": "2025-03-01",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 4,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0063",
+    "machineId": "M-027",
+    "performedAt": "2025-06-15",
+    "action": "Lubrication service",
+    "outcome": "no_issue_found",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 1,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0064",
+    "machineId": "M-027",
+    "performedAt": "2025-08-12",
+    "action": "Alignment correction",
+    "outcome": "partial_fix",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 2,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0065",
+    "machineId": "M-028",
+    "performedAt": "2024-06-02",
+    "action": "Belt replacement",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 1,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0066",
+    "machineId": "M-028",
+    "performedAt": "2025-11-30",
+    "action": "Emergency repair",
+    "outcome": "fixed",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 3,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0067",
+    "machineId": "M-029",
+    "performedAt": "2024-07-27",
+    "action": "Preventive maintenance",
+    "outcome": "needs_follow_up",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 2,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0068",
+    "machineId": "M-029",
+    "performedAt": "2025-01-08",
+    "action": "Belt replacement",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 1,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0069",
+    "machineId": "M-030",
+    "performedAt": "2025-01-15",
+    "action": "Belt replacement",
+    "outcome": "partial_fix",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 8,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0070",
+    "machineId": "M-030",
+    "performedAt": "2024-06-15",
+    "action": "Emergency repair",
+    "outcome": "needs_follow_up",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 8,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0071",
+    "machineId": "M-031",
+    "performedAt": "2024-05-22",
+    "action": "Bearing replacement",
+    "outcome": "monitor",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 2,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0072",
+    "machineId": "M-031",
+    "performedAt": "2024-12-11",
+    "action": "Belt replacement",
+    "outcome": "fixed",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 1,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0073",
+    "machineId": "M-031",
+    "performedAt": "2024-11-26",
+    "action": "Motor current inspection",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 3,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0074",
+    "machineId": "M-032",
+    "performedAt": "2024-12-06",
+    "action": "Preventive maintenance",
+    "outcome": "monitor",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 3,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0075",
+    "machineId": "M-032",
+    "performedAt": "2025-01-30",
+    "action": "Vibration analysis",
+    "outcome": "fixed",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 4,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0076",
+    "machineId": "M-033",
+    "performedAt": "2025-04-02",
+    "action": "Emergency repair",
+    "outcome": "needs_follow_up",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 2,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0077",
+    "machineId": "M-033",
+    "performedAt": "2026-03-27",
+    "action": "Preventive maintenance",
+    "outcome": "fixed",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 3,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0078",
+    "machineId": "M-034",
+    "performedAt": "2025-01-14",
+    "action": "Motor current inspection",
+    "outcome": "no_issue_found",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0079",
+    "machineId": "M-034",
+    "performedAt": "2024-07-25",
+    "action": "Cooling system cleaning",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 6,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0080",
+    "machineId": "M-035",
+    "performedAt": "2025-02-07",
+    "action": "Seal replacement",
+    "outcome": "no_issue_found",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 8,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0081",
+    "machineId": "M-035",
+    "performedAt": "2025-12-27",
+    "action": "Cooling system cleaning",
+    "outcome": "fixed",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 6,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0082",
+    "machineId": "M-035",
+    "performedAt": "2025-04-05",
+    "action": "Bearing replacement",
+    "outcome": "fixed",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 4,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0083",
+    "machineId": "M-036",
+    "performedAt": "2025-07-11",
+    "action": "Thermal inspection",
+    "outcome": "needs_follow_up",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 3,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0084",
+    "machineId": "M-036",
+    "performedAt": "2025-04-19",
+    "action": "Preventive maintenance",
+    "outcome": "monitor",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 8,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0085",
+    "machineId": "M-037",
+    "performedAt": "2026-01-17",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0086",
+    "machineId": "M-038",
+    "performedAt": "2026-01-29",
+    "action": "Routine inspection",
+    "outcome": "fixed",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 4,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0087",
+    "machineId": "M-038",
+    "performedAt": "2025-09-04",
+    "action": "Vibration analysis",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 6,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0088",
+    "machineId": "M-039",
+    "performedAt": "2025-12-20",
+    "action": "Thermal inspection",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 4,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0089",
+    "machineId": "M-039",
+    "performedAt": "2025-06-20",
+    "action": "Thermal inspection",
+    "outcome": "needs_follow_up",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 4,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0090",
+    "machineId": "M-040",
+    "performedAt": "2024-07-05",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 4,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0091",
+    "machineId": "M-040",
+    "performedAt": "2024-10-19",
+    "action": "Cooling system cleaning",
+    "outcome": "fixed",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 4,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0092",
+    "machineId": "M-041",
+    "performedAt": "2024-12-21",
+    "action": "Emergency repair",
+    "outcome": "monitor",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0093",
+    "machineId": "M-041",
+    "performedAt": "2025-06-20",
+    "action": "Emergency repair",
+    "outcome": "monitor",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 6,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0094",
+    "machineId": "M-041",
+    "performedAt": "2025-11-05",
+    "action": "Cooling system cleaning",
+    "outcome": "fixed",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 8,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0095",
+    "machineId": "M-042",
+    "performedAt": "2025-01-23",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0096",
+    "machineId": "M-042",
+    "performedAt": "2024-11-16",
+    "action": "Cooling system cleaning",
+    "outcome": "no_issue_found",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 1,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0097",
+    "machineId": "M-043",
+    "performedAt": "2025-02-06",
+    "action": "Thermal inspection",
+    "outcome": "partial_fix",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 8,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0098",
+    "machineId": "M-045",
+    "performedAt": "2024-06-22",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 4,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0099",
+    "machineId": "M-045",
+    "performedAt": "2024-09-18",
+    "action": "Routine inspection",
+    "outcome": "no_issue_found",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 6,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0100",
+    "machineId": "M-046",
+    "performedAt": "2025-07-06",
+    "action": "Vibration analysis",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0101",
+    "machineId": "M-046",
+    "performedAt": "2025-01-07",
+    "action": "Thermal inspection",
+    "outcome": "no_issue_found",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 1,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0102",
+    "machineId": "M-047",
+    "performedAt": "2024-10-24",
+    "action": "Thermal inspection",
+    "outcome": "partial_fix",
+    "findings": "Lubrication level was below recommended range.",
+    "downtimeHours": 2,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0103",
+    "machineId": "M-047",
+    "performedAt": "2025-07-01",
+    "action": "Cooling system cleaning",
+    "outcome": "monitor",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 2,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0104",
+    "machineId": "M-048",
+    "performedAt": "2025-06-19",
+    "action": "Vibration analysis",
+    "outcome": "monitor",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 1,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0105",
+    "machineId": "M-048",
+    "performedAt": "2025-09-28",
+    "action": "Seal replacement",
+    "outcome": "partial_fix",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 6,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0106",
+    "machineId": "M-050",
+    "performedAt": "2025-07-14",
+    "action": "Belt replacement",
+    "outcome": "monitor",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 1,
+    "technicianNotes": "Recommend monitoring trend over next week."
+  },
+  {
+    "maintenanceId": "MH-0107",
+    "machineId": "M-050",
+    "performedAt": "2025-09-03",
+    "action": "Seal replacement",
+    "outcome": "fixed",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 3,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0108",
+    "machineId": "M-051",
+    "performedAt": "2024-07-24",
+    "action": "Emergency repair",
+    "outcome": "partial_fix",
+    "findings": "Follow-up recommended after next production cycle.",
+    "downtimeHours": 6,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0109",
+    "machineId": "M-051",
+    "performedAt": "2025-11-20",
+    "action": "Vibration analysis",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 1,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0110",
+    "machineId": "M-052",
+    "performedAt": "2024-07-24",
+    "action": "Lubrication service",
+    "outcome": "no_issue_found",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0111",
+    "machineId": "M-052",
+    "performedAt": "2024-06-27",
+    "action": "Routine inspection",
+    "outcome": "needs_follow_up",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0112",
+    "machineId": "M-053",
+    "performedAt": "2026-05-03",
+    "action": "Emergency repair",
+    "outcome": "fixed",
+    "findings": "Thermal image showed localized heating.",
+    "downtimeHours": 1,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0113",
+    "machineId": "M-053",
+    "performedAt": "2024-07-28",
+    "action": "Vibration analysis",
+    "outcome": "partial_fix",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 6,
+    "technicianNotes": "Root cause not fully confirmed."
+  },
+  {
+    "maintenanceId": "MH-0114",
+    "machineId": "M-054",
+    "performedAt": "2024-11-14",
+    "action": "Emergency repair",
+    "outcome": "monitor",
+    "findings": "Observed wear consistent with normal operating age.",
+    "downtimeHours": 4,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0115",
+    "machineId": "M-054",
+    "performedAt": "2024-11-10",
+    "action": "Routine inspection",
+    "outcome": "fixed",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 2,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0116",
+    "machineId": "M-054",
+    "performedAt": "2025-11-10",
+    "action": "Motor current inspection",
+    "outcome": "needs_follow_up",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 0.5,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0117",
+    "machineId": "M-055",
+    "performedAt": "2025-08-27",
+    "action": "Thermal inspection",
+    "outcome": "fixed",
+    "findings": "Loose mounting hardware found and tightened.",
+    "downtimeHours": 8,
+    "technicianNotes": "Issue may recur if operating conditions remain unchanged."
+  },
+  {
+    "maintenanceId": "MH-0118",
+    "machineId": "M-055",
+    "performedAt": "2025-04-25",
+    "action": "Alignment correction",
+    "outcome": "needs_follow_up",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 3,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0119",
+    "machineId": "M-056",
+    "performedAt": "2024-07-12",
+    "action": "Preventive maintenance",
+    "outcome": "fixed",
+    "findings": "No abnormal vibration detected during inspection.",
+    "downtimeHours": 8,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0120",
+    "machineId": "M-056",
+    "performedAt": "2025-04-21",
+    "action": "Routine inspection",
+    "outcome": "fixed",
+    "findings": "Technician could not reproduce reported issue.",
+    "downtimeHours": 4,
+    "technicianNotes": "Parts availability should be checked before next intervention."
+  },
+  {
+    "maintenanceId": "MH-0121",
+    "machineId": "M-059",
+    "performedAt": "2024-10-10",
+    "action": "Vibration analysis",
+    "outcome": "needs_follow_up",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 8,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0122",
+    "machineId": "M-060",
+    "performedAt": "2025-01-11",
+    "action": "Routine inspection",
+    "outcome": "fixed",
+    "findings": "Cooling path partially blocked by dust buildup.",
+    "downtimeHours": 2,
+    "technicianNotes": "No immediate follow-up required."
+  },
+  {
+    "maintenanceId": "MH-0123",
+    "machineId": "M-060",
+    "performedAt": "2024-11-02",
+    "action": "Bearing replacement",
+    "outcome": "monitor",
+    "findings": "Component condition improved after service.",
+    "downtimeHours": 4,
+    "technicianNotes": "Temporary mitigation applied."
+  },
+  {
+    "maintenanceId": "MH-0124",
+    "machineId": "M-060",
+    "performedAt": "2026-04-26",
+    "action": "Routine inspection",
+    "outcome": "fixed",
+    "findings": "Similar symptom was observed in previous quarter.",
+    "downtimeHours": 1,
+    "technicianNotes": "Root cause not fully confirmed."
+  }
+]

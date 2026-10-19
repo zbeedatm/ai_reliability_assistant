@@ -1,0 +1,13 @@
+# Run outputs
+output/
+
+# ChromaDB — regenerated on first run from /data JSON files
+.chroma_db/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment
+.env

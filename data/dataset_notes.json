@@ -1,0 +1,26 @@
+{
+  "purpose": "Synthetic data for AI Reliability Assistant home assignment.",
+  "generatedAt": "2026-05-19T11:35:25.060447",
+  "recordCounts": {
+    "machines": 60,
+    "alerts": 91,
+    "work_orders": 70,
+    "maintenance_history": 124
+  },
+  "intentionalSignals": [
+    "M-006: strong priority candidate; critical Site A compressor with active overheating and bearing alerts plus overdue urgent work order.",
+    "M-021: strong priority candidate; critical Site B pump with active seal leak/vibration alerts and urgent work order due today.",
+    "M-011, M-016, M-026: heat/temperature/cooling-related cases with different confidence levels.",
+    "Site A vs Site B: both have serious issues, but Site A has multiple critical/high heat-related risks and overdue work; Site B has a critical pump and fewer systemic heat signals.",
+    "Some alerts are resolved or low severity to test whether the assistant avoids over-prioritizing stale/noisy data.",
+    "Some history records are partial fixes or inconclusive to test limitations/assumptions."
+  ],
+  "suggestedEvaluationQuestions": [
+    "Which machines should maintenance prioritize this week, and why?",
+    "What should we do about machine M-006?",
+    "Compare Site A and Site B and recommend where maintenance should focus first.",
+    "Are there any machines with heat- or temperature-related issues we should look at?",
+    "What should we do about machine M-999?",
+    "Which machine has the best cybersecurity posture?"
+  ]
+}

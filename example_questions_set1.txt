@@ -1,0 +1,187 @@
+AI Reliability Assistant — Example Questions & Outputs
+========================================================
+Three examples demonstrating: a supported question, an out-of-scope question,
+and a question the data cannot confidently answer.
+
+Full JSON outputs (including retrieved_records) are saved under /output.
+
+***IMPORTANT***
+Full JSON outputs will be attached with the task submission, this file is only for demonstrating.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 1 — SUPPORTED QUESTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "Which machines should maintenance prioritize this week, and why?"
+
+Response example:
+{
+  "answer": "Maintenance should prioritize the following machines this week:
+             M-021, M-006, M-034, M-040, M-045, M-053, M-011, and M-005.
+             This prioritization is based on a combination of urgent work orders
+             and a comprehensive priority score derived from criticality, health
+             status, active alerts, and overdue work orders.",
+
+  "reasoning": "Machines with Urgent Work Orders (highest immediate priority):
+    1. M-021 (Pump): Urgent overdue WO-0004 — Replace pump seal and inspect
+       bearing housing (due 2026-05-19). Priority score 55. Critical health,
+       3 active alerts, 4 overdue work orders.
+    2. M-006 (Compressor): Urgent overdue WO-0001 — Inspect compressor
+       overheating and bearing condition (due 2026-05-18). Priority score 49.
+       Critical criticality and health, 3 active alerts.
+    3. M-034 (Mixer): Urgent overdue WO-0031 — Inspect motor current (due
+       2026-05-20). Critical criticality and health.
+    4. M-040, M-045, M-053: Each has an urgent overdue work order.
+
+    Additional Top Priority (reliability analysis):
+    7. M-011 (Motor): Ranked 3rd overall (score 33). High criticality, warning
+       health, 2 overdue work orders including high-priority thermal inspection.
+    8. M-005 (Blower): Ranked 4th (score 31). Critical health, 3 overdue WOs.",
+
+  "data_used": ["machines", "alerts", "work_orders", "maintenance_history"],
+  "machines_referenced": ["M-021", "M-006", "M-034", "M-040", "M-045", "M-053", "M-011", "M-005"],
+  "limitations_or_assumptions": [
+    "The current date is assumed to be around late May/early June 2026.",
+    "Urgent work order status is treated as a direct signal for immediate attention."
+  ],
+  "confidence": "high",
+  "capabilities_used": ["data_retriever", "maintenance_analyzer", "reliability_analyzer"],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "Which machines should maintenance prioritize this week, and why?",
+      "output": "intent=prioritize, entities={'machines': [], 'sites': [], 'fault_types': []}. The user is explicitly asking which machines to prioritize for maintenance.",
+      "data_sources": []
+    },
+    {
+      "step": "data_retriever",
+      "input": "all machines",
+      "output": "Retrieved 60 machine profiles",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "maintenance_analyzer",
+      "input": "work orders and history for 60 machines",
+      "output": "Open WOs: 48, Urgent: 6, Overdue: 48",
+      "data_sources": ["work_orders", "maintenance_history"]
+    },
+    {
+      "step": "reliability_analyzer",
+      "input": "all machine profiles with alerts and work orders",
+      "output": "Top priority machines: [('M-021', 55), ('M-006', 49), ('M-011', 33), ('M-005', 31), ('M-034', 31)]",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "question + 2 context blocks",
+      "output": "Maintenance should prioritize M-021, M-006, M-034, M-040, M-045, M-053, M-011, and M-005...",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    }
+  ]
+}
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 2 — OUT-OF-SCOPE QUESTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "Which machine has the best cybersecurity posture?"
+
+Response example:
+{
+  "answer": "This question is outside the scope of the reliability assistant.
+             I can only answer questions about machine health, alerts, work orders,
+             and maintenance history based on the provided industrial dataset.",
+
+  "reasoning": "The question is about cybersecurity, not machine reliability data,
+                which is outside the assistant's scope.",
+
+  "data_used": [],
+  "machines_referenced": [],
+  "limitations_or_assumptions": ["No reliability data supports this question."],
+  "confidence": "low",
+  "capabilities_used": [],
+  "retrieved_records": [],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "Which machine has the best cybersecurity posture?",
+      "output": "intent=out_of_scope, entities={'machines': [], 'sites': [], 'fault_types': []}. The question is about cybersecurity, not machine reliability data.",
+      "data_sources": []
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "Which machine has the best cybersecurity posture?",
+      "output": "Out of scope — no capabilities invoked.",
+      "data_sources": []
+    }
+  ]
+}
+
+Note: The planner short-circuited directly to the synthesizer — no capability
+nodes were invoked and no data was retrieved.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLE 3 — DATA DOES NOT SUPPORT A CONFIDENT ANSWER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Command:
+  python main.py "What is the energy consumption trend for all motors over the last 6 months?"
+
+Response example:
+{
+  "answer": "The provided data does not contain any information regarding the
+             energy consumption trend for any motors over the last 6 months or
+             any other period. The machine profiles, alerts, and maintenance
+             history records do not include energy consumption metrics.",
+
+  "reasoning": "I have reviewed the data for all machines identified as 'Motor'
+    (M-049, M-025, M-001, M-017). For each of these motors, the provided details
+    do not contain any data points or trends related to 'energy consumption'.
+    There are no alerts specific to energy usage, nor are there any records in
+    the maintenance history that track or report on energy consumption.",
+
+  "data_used": ["machines", "alerts", "work_orders", "maintenance_history"],
+  "machines_referenced": ["M-049", "M-025", "M-001", "M-017"],
+  "limitations_or_assumptions": [
+    "The available data does not include historical sensor readings or performance
+     metrics such as energy consumption for any machines."
+  ],
+  "confidence": "low",
+  "capabilities_used": ["data_retriever", "reliability_analyzer"],
+  "trace": [
+    {
+      "step": "planner",
+      "input": "What is the energy consumption trend for all motors over the last 6 months?",
+      "output": "intent=fault_filter, entities={'machines': [], 'sites': [], 'fault_types': ['energy consumption', 'motors']}. The user is asking for a trend related to a specific fault type across a category of assets.",
+      "data_sources": []
+    },
+    {
+      "step": "data_retriever",
+      "input": "What is the energy consumption trend for all motors over the last 6 months?",
+      "output": "Retrieved 15 machine documents: ['M-049', 'M-024', 'M-025', 'M-022', 'M-019', 'M-046', 'M-051', 'M-001', 'M-017', 'M-038', 'M-044', 'M-043', 'M-003', 'M-036', 'M-059']",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "reliability_analyzer",
+      "input": "all machine profiles with alerts and work orders",
+      "output": "Top priority machines: [('M-046', 30), ('M-051', 26), ('M-025', 20), ('M-017', 20), ('M-036', 19)]",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    },
+    {
+      "step": "answer_synthesizer",
+      "input": "question + 16 context blocks",
+      "output": "The provided data does not contain any information regarding the energy consumption trend...",
+      "data_sources": ["machines", "alerts", "work_orders", "maintenance_history"]
+    }
+  ]
+}
+
+Note: The assistant searched the dataset thoroughly (retrieved 15 motor-related
+machine documents via semantic search), confirmed that no energy consumption
+metrics exist in any of them, and hedged with confidence: "low" rather than
+fabricating a trend.
